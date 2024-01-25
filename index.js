@@ -1,5 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  
+    const length = word.length
+    let i = 0; let j = 1
+    while(i <= (length - j)){
+       if(word[i] !== word[length - j]){
+           // I would have done this but for the ske of the tests. return console.log("This is not a Palindrome")
+           return false
+       }
+    
+      i ++ ; j ++
+   }
+   // I would have done this but for the ske of the tests. return console.log(`${word} is a palindrome`)
+   return true
+
 }
 
 /* 
